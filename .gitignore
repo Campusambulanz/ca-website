@@ -1,0 +1,11 @@
+# GIT IGNORE
+# exclude files from being included in your commit
+
+# FOLDERS
+build
+
+# FILES
+*.psd
+
+# DEPENDENCIES
+node_modules
