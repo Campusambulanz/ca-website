@@ -2,10 +2,10 @@
 # exclude files from being included in your commit
 
 # FOLDERS
-/build
+build/
 
 # FILES
 *.psd
 
 # DEPENDENCIES
-node_modules
+node_modules/
