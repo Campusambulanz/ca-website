@@ -264,8 +264,8 @@ img.planet-pruefung {
 // anfahrt google map
 #map-wrapper{
     width: 100%;
+    min-height: 350px;
     position: relative;
-    transform: rotate(2deg);
 }
 
 #map-canvas {
@@ -279,11 +279,8 @@ img.planet-pruefung {
 }
 
 #infobox-wrapper {
-    padding: 0;
     position: absolute;
     z-index: 5;
-    top: 20px;
-    left: 20px;
 
     border-radius: .7rem;
     overflow: hidden;
@@ -293,8 +290,7 @@ img.planet-pruefung {
 }
 
 .infobox-content{
-    padding: 15px;
-    margin: 10px;
+    padding: 10px;
     color: @light-blue;
 
     a {
@@ -310,6 +306,21 @@ img.planet-pruefung {
         background-color: @sky-blue;
       }
     }
+}
+
+@media (min-width: 400px) {
+  #map-wrapper{
+      transform: rotate(2deg);
+  }
+
+  #infobox-wrapper {
+      top: 10px;
+      left: 10px;
+  }
+
+  .infobox-content{
+      padding: 15px;
+  }
 }
 
 
