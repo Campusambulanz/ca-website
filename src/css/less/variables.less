@@ -1,0 +1,49 @@
+// colors
+@white: rgb(255,255,255);
+@sky-blue: rgb(32,126,175);
+@violet: rgb(147,17,126);
+@yellow: rgb(247,233,103);
+@brick-red: rgb(239,78,34);
+@dark-blue: rgb(10,53,66);
+@light-blue: rgb(95,183,227);
+@turquoise: rgb(4,191,191);
+@green: rgb(182,213,84);
+@medium-grey: rgb(180,180,180);
+
+// accordion bottom border
+.dotted-line {
+  width: 100%;
+  border-bottom: .1rem dashed;
+}
+
+// übergänge planeten
+.uebergang_planet {
+  width: 100%;
+  height: auto;
+  display: block;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.upsidedown {
+  transform: rotate(180deg);
+}
+
+// nav
+@hamburger-menu-size: 2.6rem;
+@hamburger-menu-padding: 1rem;
+@checkbox-size: @hamburger-menu-size + (@hamburger-menu-padding * 2);
+@hamburger-menu-bg-color: fade(@white, 20%);
+@hamburger-menu-line-height: .2rem;
+@hover-line-height: @hamburger-menu-line-height;
+@content-bg-color: fade(@medium-grey,
+94%);
+@main-color: @white;
+@anim-duration: .4s;
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

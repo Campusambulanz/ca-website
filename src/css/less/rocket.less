@@ -1,0 +1,72 @@
+@import "variables.less";
+
+/* global rocket styles
+======================================================================
+*/
+// position the rocket
+#rocket-container {
+  position: fixed;
+  display: none;
+  top: 50%;
+  right: 4rem;
+  transform: translateY(-50%);
+  overflow: visible;
+  z-index: 2;
+
+  // only display rocket when >750px width
+  @media (min-width: 750px) {
+    display: block;
+  }
+}
+
+// set properties of the rocket
+#rocket {
+  width: 3.2rem;
+  height: auto;
+
+  // rocket color
+  * {
+    fill: @white;
+  }
+}
+
+/* rocket moving up and down
+======================================================================
+*/
+@keyframes floats {
+0%   {transform: translateY(0)}
+25%  {transform: translateY(-.25rem)}
+75%  {transform: translateY(.25rem)}
+100% {transform: translateY(0)}
+}
+
+.floating {
+  animation: floats .8s ease-in-out infinite;
+}
+
+/* animating the rocket-bursts path
+======================================================================
+*/
+// keyframes
+@keyframes flames {
+  0%   {transform: scale(1, 1)}
+  50%  {transform: scale(1, 0.75)}
+  100% {transform: scale(1, 1)}
+}
+
+#rocket-burst path {
+  animation: flames .8s ease-in-out infinite;
+  transform-origin: center top;
+}
+
+/* rotate the rocket when scrolling down
+======================================================================
+*/
+
+#rocket-direction {
+  transition: all .6s ease-in-out;
+}
+
+.down {
+  transform: rotate(180deg);
+}
