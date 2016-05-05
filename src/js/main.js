@@ -1,13 +1,9 @@
 var APP = APP || {};
 
-// scroll to bottom on load
-window.onload = toBottom;
-var scrollStart = document.body.scrollHeight;
-
-// scroll to bottom function
-function toBottom() {
-		window.scrollTo(0,scrollStart);
-	}
+// scroll to bottom on document ready
+$(document).ready(function() {
+  $('body').scrollTop($(document).height());
+});
 
 // jquery stuff
 (function(window, $) {
