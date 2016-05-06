@@ -261,6 +261,70 @@ img.planet-pruefung {
   transform: rotate(2deg);
 }
 
+// anfahrt google map
+#map-wrapper{
+    width: 100%;
+    min-height: 350px;
+    position: relative;
+}
+
+#map-canvas {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: .7rem;
+}
+
+#infobox-wrapper {
+    position: absolute;
+    z-index: 5;
+
+    border-radius: .7rem;
+    overflow: hidden;
+    background-color: lighten(@light-blue, 27%);
+    border-bottom: .4rem solid darken(@light-blue, 20%);
+
+}
+
+.infobox-content{
+    padding: 10px;
+    color: @light-blue;
+
+    a {
+      color: @white;
+      margin-top: 5px;
+      display:block;
+      background-color: @light-blue;
+      padding: 5px 10px;
+      text-align: center;
+      border-radius: 2px;
+
+      &:hover{
+        background-color: @sky-blue;
+      }
+    }
+}
+
+@media (min-width: 400px) {
+  #map-wrapper{
+      transform: rotate(2deg);
+  }
+
+  #infobox-wrapper {
+      top: 10px;
+      left: 10px;
+  }
+
+  .infobox-content{
+      padding: 15px;
+  }
+}
+
+
+
 /* mappe
 ======================================================================
 */
