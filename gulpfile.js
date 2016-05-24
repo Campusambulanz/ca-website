@@ -6,18 +6,18 @@ var postcss = require('gulp-postcss'); // required for autoprefixer
 var prefix = require('gulp-autoprefixer'); // prefix css
 var concat = require('gulp-concat'); // concatenates css and js
 var minifyJS = require('gulp-uglify'); // minify js
-var nunjucksRender = require('gulp-nunjucks-render'); // html templates
+var jade = require('gulp-jade'); // compile jade to html
 var connect = require('gulp-connect'); // creates a local server
 
 // ------------- html stuff -------------
 gulp.task('html', function() {
-  nunjucksRender.nunjucks.configure(['src/templates/']); // src of template
-  return gulp.src('src/pages/*.html') // look for index.html
-  .pipe(nunjucksRender({
-      path: ['src/templates/']
-    })) // concatenates the files
-  .pipe(gulp.dest('build/'))
-  .pipe(connect.reload()); // reloads the server
+  return gulp.src('src/views/index.jade')
+    .pipe(jade({
+        basedir: 'src/views/',
+        pretty: true  // uncompressed
+    }))
+    .pipe(gulp.dest('build'))
+    .pipe(connect.reload()) // reloads the server
 });
 
 // ------------- css stuff -------------
@@ -59,7 +59,7 @@ gulp.task('img', function() {
 // ------------- global stuff -------------
 // watches for changes in the 'src' folders
 gulp.task('watch', function() {
-  gulp.watch('src/**/*.html', ['html']); // changes in html files?
+  gulp.watch('src/views/**/*.jade', ['html']); // changes in jade files?
   gulp.watch('src/css/less/*.less', ['css']); // changes in less folder?
   gulp.watch('src/css/*.css', ['css-frameworks']); // changes in frameworks?
   gulp.watch('src/js/*.js', ['js']); // changes in js folder?
@@ -76,3 +76,6 @@ gulp.task('connect', function() {
 
 // concatenates the tasks 'connect' and 'watch' and executes both
 gulp.task('serve', ['connect', 'watch']);
+
+// init && serve
+gulp.task('init', ['html', 'css', 'css-frameworks', 'js', 'img', 'serve'])

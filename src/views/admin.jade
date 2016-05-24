@@ -1,0 +1,55 @@
+//- ##ADMIN JADE
+//- Dieses Dokument ist die Schaltzentrale der Campusambulanz Webseite
+//- Es soll dir helfen auch ohne große Programmierkenntnisse alle Hebel in der Hand zu halten.
+
+//- #active sections
+//- WHAT? Sichtbarkeit der Sektionen einstellen
+//- DO?   Du kannst hier die Sichtbarkeit einzelner Sektionen an und aus schalten,
+//-       indem du die Werte <true> und <false> entsprechend setzt.
+
+- var activesection  = [] //-don't touch me!
+- activesection['kommentare'] =   true
+- activesection['studium'] =      true
+- activesection['pruefung'] =     true
+- activesection['schlafplatz'] =  true 
+- activesection['anfahrt'] =      true
+- activesection['mappe'] =        true
+- activesection['hausaufabe'] =   true
+- activesection['termine'] =      true
+- activesection['start'] =        true 
+- activesection['nav'] =          true
+
+
+//- #dates
+//- WHAT? In der Sektion "Termine" die Daten verwalten
+//- DO?   Du kannt hier alle Termine verändern, löschen oder neue hinzufügen.
+//        Kopiere hierfür einfach ein bestehendes Datum.
+
+- var dates = [] //-don't touch me!
+- dates.push('24. Dezember – der Weihnachtsmann kommt!')
+- dates.push('1. Oktober – Semesterbeginn')
+- dates.push('20. August - 20. September – Immatrikulation')
+- dates.push('1. – 10. August – Versand des Zulassungsbescheides')
+- dates.push('15. Juli – Frist Online-Bewerbung bei bestandener Prüfung')
+- dates.push('6. Juni – Erhalt des Prüfungsergebnisses')
+- dates.push('18. – 20. Mai – Eignungsprüfung')
+- dates.push('5. Mai – Versand der Prüfungseinladung')
+- dates.push('18. April – Frist Einreichung des Anmeldebogens')
+- dates.push('1. April – Frist Bewerbung zur Eignungsprüfung')
+- dates.push('14. Februar – Campus Küssen')
+- dates.push('8. Februar – Infotag mit Mappenberatung')
+
+
+//- #sponsors
+//- WHAT? Sponsoren auf der Webseite einbinden
+//- DO?   Du kannt hier alle Sponsoren verändern, löschen oder neue hinzufügen.
+//        Denk daran das entsprechende Sponsorenlogo im Ordner (src/)img/ abzulegen bzw. zu löschen.
+
+- var sponsors = []
+- sponsors.push({'name': 'Techniker Krankenkasse',  'src': 'tk.png'})
+- sponsors.push({'name': 'Fahland',                 'src': 'fahland.png'})
+- sponsors.push({'name': 'Go Public',               'src': 'gopublic.png'})
+- sponsors.push({'name': 'Havelland',               'src': 'havelland.png'})
+- sponsors.push({'name': 'Lignet Roset',            'src': 'lignet_roset.png'})
+- sponsors.push({'name': 'Studentenwerk',           'src': 'studentenwerk.png'})
+- sponsors.push({'name': 'Busse',                   'src': 'busse.png'})

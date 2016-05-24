@@ -1,0 +1,35 @@
+section.termine
+  .container
+    .row
+      .twelve.columns
+        article.text__info.bewerbungsfrist
+          h3 Bewerbungsfrist 1. April 2016
+          p
+            | Zur Bewerbung geht es 
+            a(href='#') hier
+            |  lang, wenn du dich über die Bewerbung an der
+            |           FH Potsdam informieren möchtest, findest du 
+            a(href='#') hier
+            |  viele weitere Informationen.
+          h3 Tipps:
+          ul
+            li
+              | Es gilt nicht das Datum des Poststempels, sondern das Eingangsdatum
+              | an der FH
+            li Die bestandene Eignungsprüfung sichert noch keinen Studienplatz
+    #termine.row
+      .twelve.columns.terminuebersicht
+        ul
+          //-dev: data get pulled from index.jade; pulled from admin.jade
+          each date in dates
+            li
+              p= date
+        h3 Terminübersicht
+    .row
+      .twelve.columns.sponsoren
+        ul
+          //-dev: data get pulled from index.jade; pulled from admin.jade
+          each sponsor in sponsors
+            li
+              img(src='img/#{sponsor.src}', alt='#{sponsor.name}')
+        h3 Partner der Campusambulanz
