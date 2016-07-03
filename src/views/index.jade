@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title
+      | Campusambulanz - Ein galaktischer Reiseführer durch die Eignungsprüfung der FH Potsdam
+    meta(name='description', content='Campusambulanz')
+    meta(name='author', content='FH Potsdam')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(href='https://fonts.googleapis.com/css?family=Homenaje', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='css/normalize.css')
+    link(rel='stylesheet', href='css/main.css')
+  body
+    
+    include admin.jade
+    
+    if activesection.kommentare
+      include partials/kommentare.jade
+    if activesection.studium
+      include partials/studium.jade
+    if activesection.pruefung
+      include partials/pruefung.jade
+    if activesection.schlafplatz
+      include partials/schlafplatz.jade
+    if activesection.anfahrt
+      include partials/anfahrt.jade
+    if activesection.mappe
+      include partials/mappe.jade
+    if activesection.hausaufgabe
+      include partials/hausaufgabe.jade
+    if activesection.termine
+      include partials/termine.jade
+    if activesection.start
+      include partials/start.jade
+    if activesection.nav
+      include partials/nav.jade
+    
+    // required scripts
+    script(type='text/javascript', src='js/jquery-1.12.0.min.js')
+    
+    //- component scripts
+    //- section:anfahrt:google maps
+    script(type='text/javascript', src='http://maps.google.com/maps/api/js?sensor=false')
+    script(type='text/javascript', src='http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js')
+    script(type='text/javascript', src='js/anfahrt.googlemaps.js')
+    
+    //- costum scripts
+    script(type='text/javascript', src='js/main.js')
