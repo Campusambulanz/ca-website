@@ -17,7 +17,7 @@ gulp.task('html', function() {
         pretty: true  // uncompressed
     }))
     .pipe(gulp.dest('build'))
-    .pipe(connect.reload()) // reloads the server
+    .pipe(connect.reload()); // reloads the server
 });
 
 // ------------- css stuff -------------
