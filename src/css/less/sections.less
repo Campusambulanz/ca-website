@@ -378,7 +378,6 @@ img.regenwolke {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
     border-radius: .7rem;
 }
 
@@ -390,12 +389,19 @@ img.regenwolke {
     overflow: hidden;
     background-color: lighten(@light-blue, 27%);
     border-bottom: .4rem solid darken(@light-blue, 20%);
+}
 
+.overlap {
+  position: absolute;
+  z-index: 2;
 }
 
 .infobox-content{
     padding: 10px;
-    color: @light-blue;
+
+    p {
+      color: @light-blue;
+    }
 
     a {
       color: @white;
