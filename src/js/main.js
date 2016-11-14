@@ -1,8 +1,17 @@
 var APP = APP || {};
 
-// scroll to bottom on document ready
-$(document).ready(function() {
-  $('body').scrollTop($(document).height());
+
+$(window).load(function(){
+
+  //hide loading
+  $('#loading').fadeOut(300);
+
+  //show page
+  $('#wrapper').fadeIn(150);
+
+  //scroll to bottom (#how to compensate for lazy disque plugin height?)
+  var bodyHeight = $('body').prop("scrollHeight")
+  $('body').scrollTop(bodyHeight + 300);
 });
 
 // jquery stuff

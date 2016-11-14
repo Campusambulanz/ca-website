@@ -14,27 +14,29 @@ html
   body
     
     include admin.jade
+    include loading.jade
     
-    if activesection.kommentare
-      include partials/kommentare.jade
-    if activesection.studium
-      include partials/studium.jade
-    if activesection.pruefung
-      include partials/pruefung.jade
-    if activesection.schlafplatz
-      include partials/schlafplatz.jade
-    if activesection.anfahrt
-      include partials/anfahrt.jade
-    if activesection.mappe
-      include partials/mappe.jade
-    if activesection.hausaufgabe
-      include partials/hausaufgabe.jade
-    if activesection.termine
-      include partials/termine.jade
-    if activesection.start
-      include partials/start.jade
-    if activesection.nav
-      include partials/nav.jade
+    #wrapper
+      if activesection.kommentare
+        include partials/kommentare.jade
+      if activesection.studium
+        include partials/studium.jade
+      if activesection.pruefung
+        include partials/pruefung.jade
+      if activesection.schlafplatz
+        include partials/schlafplatz.jade
+      if activesection.anfahrt
+        include partials/anfahrt.jade
+      if activesection.mappe
+        include partials/mappe.jade
+      if activesection.hausaufgabe
+        include partials/hausaufgabe.jade
+      if activesection.termine
+        include partials/termine.jade
+      if activesection.start
+        include partials/start.jade
+      if activesection.nav
+        include partials/nav.jade
     
     // required scripts
     script(type='text/javascript', src='js/jquery-1.12.0.min.js')
