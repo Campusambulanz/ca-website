@@ -14,6 +14,20 @@ $(window).load(function(){
   $('body').scrollTop(bodyHeight + 300);
 });
 
+
+$(document).ready(function(){
+
+  // accordion open/close
+  $('.accordion section').click(function(){
+    // hide other accordion details
+    $('.accordion section').not(this).find('p').slideUp(200);
+    // open this accordion
+    $(this).find('p').slideToggle('fast');
+  });
+
+});
+
+
 // jquery stuff
 (function(window, $) {
 
