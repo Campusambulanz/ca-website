@@ -125,7 +125,7 @@ body > section {
 }
 
 .uebergang_planet-unterseite {
-  width: 110%;
+  width: 100%;
   height: auto;
   display: block;
   bottom: 0;
@@ -188,7 +188,7 @@ img.planet-big {
 }
 
 .uebergang_steine {
-  width: 108%;
+  width: 100%;
   height: auto;
   display: block;
   bottom: 0;
@@ -304,6 +304,25 @@ img.regenwolke {
   }
 }
 
+a.btn-sleep {
+  margin: 0 auto;
+  width: 350px;
+  display: block;
+  padding: 10px 5px;
+  border-radius: 3px;
+  background-color: @brick-red;
+
+  border-bottom: 3px solid darken(@brick-red,15%);
+  transition: all 150ms ease 0s;
+
+  &:hover {
+      color: #0a3542;
+      background-color: @yellow;
+      border-bottom: 3px solid darken(@yellow,30%);
+      transition: all 200ms ease 0s;
+  }
+}
+
 /* anfahrt
 ======================================================================
 */
@@ -311,6 +330,7 @@ img.regenwolke {
 // übergänge
 .uebergang_anfahrt-schlafplatz {
   background: @dark-blue;
+  width: 100%;
 }
 
 .uebergang_schlafende-raketen {
