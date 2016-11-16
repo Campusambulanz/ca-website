@@ -11,7 +11,7 @@ Herzlich Willkommen in unserem Campusambulanz-Repo. Hier findest du alle Zutaten
 ## Installation
 Installiere zunächst node.js und folge dann dieser Anleitung.
 
-```bash
+```sh
 // klone dieses Repository
 git clone https://github.com/Campusambulanz/ca-website.git
 
@@ -29,7 +29,7 @@ npm install
 ## Start
 Wenn alle benötigten node Module installiert wurden, kannst du nun das Projekt mittels gulp starten:
 
-```bash
+```sh
 // einmalig (in deinem repository wird nun ein /build verzeichnis erstellt)
 gulp init
 
