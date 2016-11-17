@@ -36,7 +36,10 @@ Dieser Befehl sorgt dafür, dass das Projekt geladen ist und sich der Browser be
 Einfache Änderungen können in der admin.jade-Datei gemacht werden. In dieser sind alle nötigen Schritte erklärt. Dazu gehören: Termine ändern, Sponsoren ändern und einzelne Sections ein- oder ausblenden. Diese Aufgaben kann jede/r auch ohne HTML- oder Programmierkenntnisse ausführen. Für komplexere inhaltliche oder gestalterische Änderungen wendet euch bitte an das aktuelle oder vorherige Campusambulanz-Online-Team.
 
 ## An wen kann ich mich wenden?
-Bei Incom existieren Workspaces für die Campusambulanzen der jeweiligen Jahre. Hier findet ihr alle Kontakte und könnt die zuständigen Personen kontaktieren. Einfach zu finden über die Suchfunktion.
+Bei [Incom](https://incom.org/) existieren Workspaces für die Campusambulanzen der jeweiligen Jahre. Hier findet ihr alle Kontakte und könnt die zuständigen Personen kontaktieren. Einfach zu finden über die Suchfunktion.
+
+Das Team, das die responsive Version der Website ursprünglich erstellt hat (2016), ist hier zu finden und zu kontaktieren:
+[Campusambulanz Online 2016](https://incom.org/workspace/6516)
 
 ## Und sonst?
 Diese Website wurde von Studierenden der FHP erstellt, nicht von Profis mit langjähriger Developer-Erfahrung. Daher sind wir uns bewusst, dass immer mal wieder Fehler und Bugs auftauchen können. Wenn ihr also in Zukunft auf Fehler aufmerksam werdet, zögert nicht, diese in Frage zu stellen und zu verbessern.
