@@ -98,9 +98,32 @@ body > section {
     height:100%;
 }
 
-/* kommentare
+/* kommentare + impressum
 ======================================================================
 */
+
+#impressum_bar {
+  width: 100%;
+  height: auto;
+  background-color: @dark-blue;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    li:last-child {
+      margin-left: 2rem;
+    }
+
+    a {
+      color: @white;
+    }
+  }
+}
 
 .kommentare {
   background: @sky-blue;
