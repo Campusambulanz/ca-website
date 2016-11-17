@@ -11,7 +11,7 @@ var connect = require('gulp-connect'); // creates a local server
 
 // ------------- html stuff -------------
 gulp.task('html', function() {
-  return gulp.src('src/views/index.jade')
+  return gulp.src(['src/views/index.jade', 'src/views/impressum.jade', 'src/views/datenschutz.jade'])
     .pipe(jade({
         basedir: 'src/views/',
         pretty: true  // uncompressed
