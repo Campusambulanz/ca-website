@@ -60,10 +60,15 @@ Diese Website wurde von Studierenden der FHP erstellt, nicht von Profis mit lang
 ## Autoren
 
 
-- [Name Name @handle](http://github.com/name) Original Design und Layout (Team 2015)
-- [Jonas Köpfer – @topada](http://github.com/topada) Redesign, Responsive Design, Jade (Team 2016)
-- [Dennis @dnsos](http://github.com/dnsos)] Redesign, Responsive Design (Team 2016)
-- [Donatus Wolf @doniwolf](http://github.com/doniwolf) Redesign Lead, Communication, Project Management (Team 2016)
+- [Laurids Düllmann @vicegold](http://github.com/vicegold) – Original Design und Layout (Team 2012)
+- [Lennart Hildebrandt @lennerd](http://github.com/lennerd) – Original Frontend (Team 2012)
+- [Ben Schmitt @benschmitt](http://github.com/benschmitt) – Original Frontend (Team 2012)
+- Michael Dietz – Original Logo (Team 2012)
+- [Corvin Weber](http://corvinweber.de/) – Original Texte (Team 2012)
+- [Thomas Otto](http://thomas-otto.net/) – Original Texte (Team 2012)
+- [Jonas Köpfer – @topada](http://github.com/topada) – Redesign, Responsive Design, Jade (Team 2016)
+- [Dennis @dnsos](http://github.com/dnsos) – Redesign, Responsive Design (Team 2016)
+- [Donatus Wolf @doniwolf](http://github.com/doniwolf) – Redesign Lead, Communication, Project Management (Team 2016)
 
 ## Lizenz
 The MIT License (MIT)
