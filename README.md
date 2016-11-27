@@ -39,6 +39,7 @@ gulp serve
 ```
 
 ## Struktur
+![ca structure](src/img/ca-structure.png "Campusambulanz Struktur")
 
 (dev) Treemap zeigen, zusammenhang zwischen src/build views/css(less) erklären!
 
