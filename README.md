@@ -2,7 +2,10 @@
 
 # CAMPUSAMBULANZ (FH Potsdam)
 
-Herzlich Willkommen in unserem Campusambulanz-Repo. Hier findest du alle Zutaten und Gewürze mit denen wir die Webseite bauen.
+Willkommen im Campusambulanz Repository der Fachhochschule Potsdam. Jedes Jahr bewerben sich viele Designinteressierte an der Fachhochschule und stellen in einer Eignungsprüfung ihr Talent und Können unter beweis. So ein Tag ist natürlich mit viel Stress verbunden. Deshalb gibt es die Campusambulanz, eine Gruppe aus Erstsemestern, die dir den Tag der Eignungsprüfung so angenehm wie möglich gestalten wollen.
+
+Dieses Repository richtet sich in erster Linie an das aktuelle Campusambulanz Webseiten Team. Wenn ihr mehr erfahren, und gleichzeitig das Ergebnis dieses Repositories sehen wollt, schaut doch mal vorbei auf [www.fhp-campusambulanz.de](http://www.fhp-campusambulanz.de/)
+
 
 ## Anforderungen
 - [node.js](https://nodejs.org/en/)
@@ -41,26 +44,25 @@ gulp serve
 ## Struktur
 ![ca structure](src/img/ca-structure.png "Campusambulanz Struktur")
 
-(dev) Treemap zeigen, zusammenhang zwischen src/build views/css(less) erklären!
+
 
 
 ## Inhalte ändern
-Einfache Änderungen können in der admin.jade-Datei gemacht werden. In dieser sind alle nötigen Schritte erklärt. Dazu gehören: Termine ändern, Sponsoren ändern und einzelne Sections ein- oder ausblenden. Diese Aufgaben kann jede/r auch ohne HTML- oder Programmierkenntnisse ausführen. Für komplexere inhaltliche oder gestalterische Änderungen wendet euch bitte an das aktuelle oder vorherige Campusambulanz-Online-Team.
+Einfache Änderungen können in der **admin.jade** gemacht werden. In dieser sind alle nötigen Schritte erklärt:
+– Termine ändern
+– Sponsoren ändern
+– einzelne Sections ein- oder ausblenden
 
-
-
-## Hilfe!
-
-(dev)
-
+Diese Aufgaben kann jede/r auch ohne HTML- oder Programmierkenntnisse ausführen. Für komplexere inhaltliche oder gestalterische Änderungen wendet euch bitte an das aktuelle oder vorherige Campusambulanz.
 
 ## Fehler?
-Diese Website wurde von Studierenden der FHP erstellt, nicht von Profis mit langjähriger Developer-Erfahrung. Daher sind wir uns bewusst, dass immer mal wieder Fehler und Bugs auftauchen können. Wenn ihr also in Zukunft auf Fehler aufmerksam werdet, zögert nicht, diese in Frage zu stellen und zu verbessern.
+Diese Website wurde von Studenten der FHP erstellt, nicht von Developern mit langjähriger Erfahrung. Daher sind wir uns bewusst, dass Fehler und Bugs auftauchen können. Wenn ihr in Zukunft Fehler entdeckt, zögert nicht, diese in Frage zu stellen und zu verbessern.
+
+## Hilfe!
+Du kommst überhaupt nicht weiter? Schreib uns einfach an, oder erstelle ein 'Help-Wanted' Issue – bestimmt eilt dir ein ehemaliger Campussanitäter zur Hilfe.
 
 
 ## Autoren
-
-
 - [Laurids Düllmann @vicegold](http://github.com/vicegold) – Original Design und Layout (Team 2012)
 - [Lennart Hildebrandt @lennerd](http://github.com/lennerd) – Original Frontend (Team 2012)
 - [Ben Schmitt @benschmitt](http://github.com/benschmitt) – Original Frontend (Team 2012)
