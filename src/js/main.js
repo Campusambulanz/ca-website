@@ -4,10 +4,10 @@ var APP = APP || {};
 $(window).load(function(){
 
   //hide loading
-  $('#loading').fadeOut(300);
+  //$('#loading').fadeOut(300);
 
   //show page
-  $('#wrapper').fadeIn(150);
+  //$('#wrapper').fadeIn(150);
 
   //scroll to bottom (#how to compensate for lazy disque plugin height?)
   var bodyHeight = $('body').prop("scrollHeight")
