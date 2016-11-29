@@ -26,8 +26,8 @@ gulp.task('css', function() {
   return gulp.src('src/css/less/*.less') // src: less files
       .pipe(less()) // compiles all less files
       .pipe(prefix())
-      .pipe(minifyCSS()) // minifies all css files
       .pipe(concat('main.css')) // concatenates all css files
+      .pipe(minifyCSS()) // minifies all css files
       .pipe(gulp.dest('build/css/'))
       .pipe(connect.reload()); // reloads the server
 });
